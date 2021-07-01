@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MonitoringActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/view_main_header"/>
+
+    <RelativeLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_as"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="@string/main_as" />
+
+        <Button
+            android:id="@+id/btn_voa"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/btn_as"
+            android:text="@string/main_voa" />
+
+        <Button
+            android:id="@+id/btn_install"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/btn_as"
+            android:text="@string/main_install" />
+
+        <Button
+            android:id="@+id/btn_posting"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/btn_voa"
+            android:layout_toRightOf="@id/btn_install"
+            android:text="@string/main_posting" />
+
+        <Button
+            android:id="@+id/btn_qr"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/btn_install"
+            android:text="@string/main_qr" />
+
+        <Button
+            android:id="@+id/btn_car"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/btn_posting"
+            android:layout_toRightOf="@id/btn_qr"
+            android:text="@string/main_car" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

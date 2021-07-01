@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/sunTxtView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/monTxtView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/monTxtView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/tueTxtView"
+        app:layout_constraintStart_toEndOf="@+id/sunTxtView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="2" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tueTxtView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/wedTxtView"
+        app:layout_constraintStart_toEndOf="@+id/monTxtView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/wedTxtView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/thuTxtView"
+        app:layout_constraintStart_toEndOf="@+id/tueTxtView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="4" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/thuTxtView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/friTxtView"
+        app:layout_constraintStart_toEndOf="@+id/wedTxtView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="5" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/friTxtView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/satTxtView"
+        app:layout_constraintStart_toEndOf="@+id/thuTxtView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="6" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/satTxtView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/friTxtView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="7" />
+</androidx.constraintlayout.widget.ConstraintLayout>

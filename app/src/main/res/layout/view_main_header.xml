@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/fmk_color_toolbar">
+
+        <TextView
+            android:id="@+id/tv_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:text="오늘"/>
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_today"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:text="1.10"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_day"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:text="000님"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageButton
+                android:id="@+id/ib_refresh"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:background="@drawable/refresh"/>
+            <ImageButton
+                android:id="@+id/ib_logout"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ib_refresh"
+                android:background="@drawable/logout"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
